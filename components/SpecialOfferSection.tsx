@@ -64,7 +64,7 @@ export const SpecialOfferSection: React.FC = () => {
     <section className="relative bg-gradient-to-r from-green-50 to-green-100 py-16 overflow-hidden rounded-lg shadow-inner my-12">
       {/* Background patterns/images based on the provided design */}
       <Image
-        src="/images/vegetable-pattern-top.png" // Path to your top background pattern if you have one
+        src="/leaf-top.png" // Path to your top background pattern if you have one
         alt="Background pattern"
         width={300}
         height={150}
@@ -72,7 +72,7 @@ export const SpecialOfferSection: React.FC = () => {
         style={{ transform: 'rotate(180deg)' }}
       />
       <Image
-        src="/images/vegetable-pattern-bottom.png" // Path to your bottom background pattern if you have one
+        src="/leaf-top.png" // Path to your bottom background pattern if you have one
         alt="Background pattern"
         width={300}
         height={150}
@@ -131,11 +131,11 @@ export const SpecialOfferSection: React.FC = () => {
         {/* Image Section */}
         <div className="flex-1 flex justify-center lg:justify-end mt-8 lg:mt-0">
           <Image
-            src="/images/fruit-bundle.png" // Replace with your actual fruit bundle image
+            src="/fruit-bundle.png" 
             alt="Seasonal Fruit Bundle"
-            width={600} // Adjust based on your image dimensions
-            height={400} // Adjust based on your image dimensions
-            priority // Load this image earlier if it's above the fold
+            width={600} 
+            height={400} 
+            priority 
           />
         </div>
       </div>
