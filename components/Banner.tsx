@@ -26,11 +26,11 @@ const Banner = () => {
                 </div>  
             </div>
             {/* offer card */}
-            <div className="offer absolute top-[400px] left-[30px] md:top-[570px] md:left-[330px] flex items-center justify-between bg-[#EBEBEB] p-4 rounded-2xl w-[190px] md:w-[330px]">
+            <div className="offer absolute top-[400px] left-[30px] md:top-[570px] md:left-[330px] flex items-center justify-between bg-[#EBEBEB] p-4 rounded-2xl w-[250px] md:w-[330px]">
                 <div className=""><h2 className="text-Green text-[8px]">special offer </h2>
-                    <h2 className="tex">Fresh Salad</h2>
-                    <h2>Up to 70% off </h2>
-                    <h2>code: FRESH25</h2>
+                    <h2 className="text-sm">Fresh Salad</h2>
+                    <h2 className=" text-[8px]">Up to 70% off </h2>
+                    <h2 className="bg-Green  inline-block rounded-2xl text-[10px] text-white p-1">code: FRESH25</h2>
                     <div className="">
 
                     </div>

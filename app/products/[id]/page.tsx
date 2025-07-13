@@ -10,7 +10,7 @@ const DetailsPage = async({ params }: { params: { id: string }}) => {
   const { id } = await params
     const product = await getProduct(id);
     return (
-        <div className="max-w-4xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mt-16 mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
       {/* Image */}
       <div className="relative w-full aspect-[4/3] rounded overflow-hidden">
         <Image
