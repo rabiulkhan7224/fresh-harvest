@@ -13,8 +13,8 @@ const Navabar = () => {
     const NavItems = [
         { name: "Home", href: "/" },
         { name: "About", href: "#about" },
-        { name: "Shop", href: "#Shop" },
-        { name: "Blog", href: "#Blog" },
+        { name: "Shop", href: "#shop" },
+        { name: "Blog", href: "#blog" },
 
     ]
 

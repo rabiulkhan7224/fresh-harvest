@@ -45,7 +45,7 @@ const Products = () => {
    
 
     return (
-        <div className="container w-11/12 mx-auto py-10">
+        <div id="shop" className="container w-11/12 mx-auto py-10">
             {/* Category Filter */}
             <div className="flex flex-wrap gap-3 justify-center mb-8">
                 <button

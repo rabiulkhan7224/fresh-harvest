@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <section className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center gap-12">
+    <section id="about" className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center gap-12">
       {/* Image Section */}
       <div className="relative w-full lg:w-1/2 h-80 sm:h-96 lg:h-[500px] rounded-lg overflow-hidden ">
         <Image

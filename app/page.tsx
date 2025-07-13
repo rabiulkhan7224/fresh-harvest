@@ -1,5 +1,6 @@
 import AboutPage from "@/components/Abouts";
 import Banner from "@/components/Banner";
+import BlogSection from "@/components/BlogSection";
 import Products from "@/components/Products";
 import { SpecialOfferSection } from "@/components/SpecialOfferSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
@@ -17,6 +18,7 @@ export default function Home() {
       </AboutPage>
       <SpecialOfferSection />
       <TestimonialSection />
+      <BlogSection />
           </div>
   );
 }
