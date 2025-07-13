@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 };
 const roboto = Rubik({
   weight: '400',
+   subsets: ["latin"],
   
 })
 
