@@ -4,13 +4,14 @@ import { Button } from "./button";
 import { motion } from "motion/react";
 import { Heart, Menu, ShoppingCart, X } from "lucide-react";
 import { AuthDialog } from "../auth-dialog";
+import Link from "next/link";
 
 const Navabar = () => {
     const [isSrolled, setIsScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isAuthDialogOpen, setIsAuthDialogOpen] = useState<boolean>(false);
     const NavItems = [
-        { name: "Home", href: "#" },
+        { name: "Home", href: "/" },
         { name: "About", href: "#about" },
         { name: "Shop", href: "#Shop" },
         { name: "Blog", href: "#Blog" },
@@ -67,10 +68,11 @@ const Navabar = () => {
                                 NavItems.map((item, index) => (
                                     <div key={index}>
 
+                                      <Link href={item.href}>
                                         <Button variant={"ghost"} className='text-sm font-medium'>
 
                                             {item.name}
-                                        </Button>
+                                        </Button></Link>
                                     </div>
                                 ))
                             }
