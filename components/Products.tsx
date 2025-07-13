@@ -1,6 +1,7 @@
 'use client'
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import useSWR from "swr";
@@ -41,14 +42,7 @@ const Products = () => {
         : products;
 
 
-    //   let products: Product[] = [];
-
-    //   try {
-    //     const res = await axios.get("https://code-commando.com/api/v1/products");
-    //     products = res.data?.data || []; 
-    //   } catch (error) {
-    //     console.error("Error fetching products:", error);
-    //   }
+   
 
     return (
         <div className="container w-11/12 mx-auto py-10">
@@ -96,7 +90,7 @@ const Products = () => {
                             className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition cursor-pointer"
                         >
                             <div
-                                className="relative w-full h-48"
+                                className="relative w-full h-48 bg-gray-50"
                                 onClick={() => router.push(`/products/${product.id}`)}
                             >
                                 <Image
@@ -104,24 +98,22 @@ const Products = () => {
                                     alt={product.productName}
                                     fill
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                                    className="object-cover object-center rounded" />
+                                    className="object-cover object-center rounded " />
                             </div>
-                            <div className="p-4">
+                            <div className="p-4 text-center">
                                 <h2 className="text-lg font-semibold mb-1 line-clamp-1">
                                     {product.productName}
                                 </h2>
-                                <p className="text-gray-500 text-sm line-clamp-2 mb-2">
-                                    {product.description}
+                               
+                                <p className=" font-bold mb-2">
+                                    $ {product.price} /Kg
                                 </p>
-                                <p className="text-green-600 font-bold mb-2">
-                                    ৳ {product.price}
-                                </p>
-                                <button
-                                    // onClick={() => handleAddToCart(product)}
-                                    className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm"
+                                <Link href={`/products/${product.id}`}
+                                    
+                                    className="bg-primaryColor hover:bg-Gray100 text-white px-8 py-2 rounded text-sm w-full mx-auto"
                                 >
                                     Add to Cart
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     ))}
